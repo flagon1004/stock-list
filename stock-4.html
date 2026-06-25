@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>카카오뱅크 | 다음주 매수 후보 분석</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f5f0;--surface:#ffffff;--surface2:#f0efe8;--border:#d8d8d0;--accent:#c8a96e;--up:#e05c5c;--down:#4caf82;--text:#1a1a1a;--muted:#6b7280;--dim:#9ca3af;--radius:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;line-height:1.55}
+.page{max-width:780px;margin:0 auto;padding:28px 32px;background:var(--surface)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
+.ticker-badge{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);background:var(--surface2);padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:6px}
+.name{font-family:'DM Serif Display',serif;font-size:28px}
+.subtitle{font-size:12px;color:var(--muted);margin-top:2px}
+.price-box{text-align:right}
+.price{font-family:'DM Serif Display',serif;font-size:26px}
+.chg{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600}
+.up{color:var(--up)}
+.down{color:var(--down)}
+.score-row{display:flex;gap:10px;margin-bottom:18px}
+.score-chip{flex:1;background:var(--surface2);border-radius:var(--radius);padding:10px 12px;text-align:center}
+.score-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);display:block;margin-bottom:4px;letter-spacing:.04em}
+.score-val{font-size:18px;font-weight:700}
+.score-4{color:#d4a13d}
+.score-3{color:var(--muted)}
+section{margin-bottom:14px}
+.sec-title{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.05em;margin-bottom:6px;padding-bottom:3px;border-bottom:1px solid var(--border)}
+.sec-body{font-size:12.5px;color:var(--text);line-height:1.6}
+.sec-body strong{color:var(--text)}
+ul.tight{padding-left:16px;margin-top:4px}
+ul.tight li{font-size:12px;margin-bottom:3px;color:var(--text)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.verdict-box{background:linear-gradient(135deg,#fff8e1,#fffde7);border:1.5px solid #e8c468;border-radius:var(--radius);padding:14px 16px;margin-top:10px}
+.verdict-title{font-size:13px;font-weight:700;color:#7a5c00;margin-bottom:4px}
+.verdict-body{font-size:12px;color:#5d4a1f;line-height:1.6}
+.risk-box{background:#fff5f5;border:1px solid #fca5a5;border-radius:var(--radius);padding:10px 14px;margin-top:8px}
+.risk-title{font-size:11px;font-weight:700;color:#b91c1c;margin-bottom:4px}
+.risk-body{font-size:11.5px;color:#7a2020;line-height:1.55}
+.footer-note{margin-top:16px;padding-top:10px;border-top:1px solid var(--border);font-size:9.5px;color:var(--dim);line-height:1.5}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top">
+    <div>
+      <span class="ticker-badge">323410 · KOSPI</span>
+      <div class="name">카카오뱅크</div>
+      <div class="subtitle">인터넷전문은행 · 저베타 금융주</div>
+    </div>
+    <div class="price-box">
+      <div class="price">24,350원</div>
+      <div class="chg" style="color:var(--muted)">(6/10 기준)</div>
+      <div style="font-size:10px;color:var(--muted);margin-top:3px">평균 목표가 27,971원 (상승여력 약 +15%)</div>
+    </div>
+  </div>
+
+  <div class="score-row">
+    <div class="score-chip"><span class="score-label">모멘텀</span><span class="score-val score-3">★★★☆☆</span></div>
+    <div class="score-chip"><span class="score-label">수급</span><span class="score-val score-3">★★★☆☆</span></div>
+    <div class="score-chip"><span class="score-label">기술적위치</span><span class="score-val score-4">★★★★☆</span></div>
+    <div class="score-chip"><span class="score-label">리스크</span><span class="score-val" style="color:#2e7d32">낮음</span></div>
+  </div>
+
+  <section>
+    <div class="sec-title">1. 단기 모멘텀 및 이벤트</div>
+    <div class="sec-body">
+      애널리스트 8명 매수, 0명 매도 의견(또는 다른 집계 기준 매수 7·보유 9·매도 1)으로 전반적으로 긍정적 시각이 유지되고 있다. 교보증권은 2026년 신규 서비스 파이프라인 확대를 근거로 목표가 32,000원(매수)을 제시했다. 2026년 8월 5일 실적 발표가 예정되어 있어, 다음 주에는 명확한 단기 이벤트가 부재한 편이다. 반도체 쏠림 장세에서 상대적으로 소외된 업종 특성상, 최근 시장의 급등락(6/23 폭락, 6/25 반등)에서 변동성이 상대적으로 낮았을 가능성이 높다.
+      <ul class="tight">
+        <li><strong>실적 발표:</strong> 8/5 예정 — 당장 다음주 내 확정 이벤트는 없음</li>
+        <li><strong>사옥 이전:</strong> 여의도 오피스를 접고 판교 중심 '원오피스' 체제로 전환 — 비용 효율화 측면의 중장기 긍정 신호</li>
+        <li><strong>플랫폼 확장:</strong> 신규 서비스 파이프라인이 2026년 성장 스토리의 핵심 근거로 제시됨</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <div class="sec-title">2. 주도 테마 및 수급</div>
+      <div class="sec-body">
+        반도체·메모리 중심의 최근 시장 주도 테마와는 거리가 있는 인터넷은행 업종. 이는 단점이자 동시에 장점 — 반도체 쏠림이 청산되는 변동성 장세(6/23 같은 날)에 상대적으로 덜 흔들릴 수 있는 포지션이다. 다만 그만큼 강한 모멘텀 트리거도 부재한 상태로, 자체 촉발 이벤트보다는 시장 전반의 안정화 여부에 더 영향을 받는 구조.
+      </div>
+    </section>
+    <section>
+      <div class="sec-title">3. 기술적 분석</div>
+      <div class="sec-body">
+        52주 범위 20,850원~38,750원 중 24,350원은 하단에 가까운 구간에 위치, 평균 목표가 대비 상승여력이 5종목 중 상대적으로 안정적인 수준(약 15%)으로 제시된다. 다만 컨센서스 내에서도 매수와 보유 의견이 혼재해 의견 일치도는 높지 않다.
+      </div>
+    </section>
+  </div>
+
+  <div class="verdict-box">
+    <div class="verdict-title">📌 종합 코멘트</div>
+    <div class="verdict-body">
+      5개 종목 중 가장 "조용한" 포지션. 반도체 쏠림 리스크에서 자유롭고 변동성이 낮다는 점은 방어적 장점이지만, 다음 주 안에 뚜렷한 단기 트리거가 보이지 않는다는 점에서 "단기 모멘텀 플레이"보다는 "상대적 안정성을 원할 때"의 선택지에 가깝다.
+    </div>
+  </div>
+
+  <div class="risk-box">
+    <div class="risk-title">⚠️ 핵심 리스크</div>
+    <div class="risk-body">① 국내은행 보통주자본비율(CET1)이 1분기 일제히 하락 — 업종 전반 건전성 지표 약화 ② 단기 모멘텀 부재로 반등장에서 상승 탄력이 약할 가능성 ③ 애널리스트 의견이 매수/보유로 혼재 — 컨센서스 강도가 약함</div>
+  </div>
+
+  <div class="footer-note">
+    본 자료는 정보 제공 목적이며 투자 권유가 아닙니다. 작성자는 투자자문업 등록 기관이 아니며 특정 종목의 매수·매도를 추천하지 않습니다. 모든 수치는 2026.06.10 기준 공개된 뉴스·증권사 리포트 기준이며(최신가 변동 가능), 투자 결정은 본인의 판단과 책임 하에 이루어져야 합니다. · 한상훈_AI_투자브리핑
+  </div>
+
+</div>
+</body>
+</html>
