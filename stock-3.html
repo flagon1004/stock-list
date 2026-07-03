@@ -2,111 +2,93 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>한화에어로스페이스 | 다음주 매수 후보 분석</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<title>져스텍 (153890) - 주간 Top-5</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f5f0;--surface:#ffffff;--surface2:#f0efe8;--border:#d8d8d0;--accent:#c8a96e;--up:#e05c5c;--down:#4caf82;--text:#1a1a1a;--muted:#6b7280;--dim:#9ca3af;--radius:10px}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;line-height:1.55}
-.page{max-width:780px;margin:0 auto;padding:28px 32px;background:var(--surface)}
-.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
-.ticker-badge{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);background:var(--surface2);padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:6px}
-.name{font-family:'DM Serif Display',serif;font-size:26px}
-.subtitle{font-size:12px;color:var(--muted);margin-top:2px}
-.price-box{text-align:right}
-.price{font-family:'DM Serif Display',serif;font-size:26px}
-.chg{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600}
-.up{color:var(--up)}
-.down{color:var(--down)}
-.score-row{display:flex;gap:10px;margin-bottom:18px}
-.score-chip{flex:1;background:var(--surface2);border-radius:var(--radius);padding:10px 12px;text-align:center}
-.score-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);display:block;margin-bottom:4px;letter-spacing:.04em}
-.score-val{font-size:18px;font-weight:700}
-.score-4{color:#d4a13d}
-.score-3{color:var(--muted)}
-section{margin-bottom:14px}
-.sec-title{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.05em;margin-bottom:6px;padding-bottom:3px;border-bottom:1px solid var(--border)}
-.sec-body{font-size:12.5px;color:var(--text);line-height:1.6}
-.sec-body strong{color:var(--text)}
-ul.tight{padding-left:16px;margin-top:4px}
-ul.tight li{font-size:12px;margin-bottom:3px;color:var(--text)}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.verdict-box{background:linear-gradient(135deg,#fff8e1,#fffde7);border:1.5px solid #e8c468;border-radius:var(--radius);padding:14px 16px;margin-top:10px}
-.verdict-title{font-size:13px;font-weight:700;color:#7a5c00;margin-bottom:4px}
-.verdict-body{font-size:12px;color:#5d4a1f;line-height:1.6}
-.risk-box{background:#fff5f5;border:1px solid #fca5a5;border-radius:var(--radius);padding:10px 14px;margin-top:8px}
-.risk-title{font-size:11px;font-weight:700;color:#b91c1c;margin-bottom:4px}
-.risk-body{font-size:11.5px;color:#7a2020;line-height:1.55}
-.footer-note{margin-top:16px;padding-top:10px;border-top:1px solid var(--border);font-size:9.5px;color:var(--dim);line-height:1.5}
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #f4f2f0;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 30px 22px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  }
+  .ticker {
+    display: inline-block;
+    background: #fdeceb;
+    color: #d0392b;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  h1 { margin: 4px 0 6px; font-size: 26px; }
+  h1 a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 2px solid #d0392b;
+  }
+  h1 a:hover { color: #d0392b; }
+  .market { color: #666; font-size: 14px; margin-bottom: 4px; }
+  .change { color: #333; font-size: 14px; margin-bottom: 18px; font-weight: 500; }
+  h2 {
+    font-size: 15px;
+    color: #d0392b;
+    border-left: 4px solid #d0392b;
+    padding-left: 8px;
+    margin: 18px 0 8px;
+  }
+  ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: #222; }
+  .risk {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.5;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+  }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="card">
+  <span class="ticker">티커 153890</span>
+  <h1><a href="https://finance.naver.com/item/fchart.naver?code=153890" target="_blank" rel="noopener">져스텍</a></h1>
+  <div class="market">KOSDAQ · 반도체 HBM/첨단패키징 초정밀 모션제어(소부장)</div>
+  <div class="change">지난주(2026-06-26 → 2026-07-03) +26.32% · 12,500원 → 15,790원</div>
 
-  <div class="top">
-    <div>
-      <span class="ticker-badge">012450 · KOSPI</span>
-      <div class="name">한화에어로스페이스</div>
-      <div class="subtitle">방산 · 엔진 · 중동/유럽 수출 밸류체인</div>
-    </div>
-    <div class="price-box">
-      <div class="price">~106~114만원대</div>
-      <div class="chg down">최근 4거래일 연속 약세</div>
-      <div style="font-size:10px;color:var(--muted);margin-top:3px">평균 목표가 150만원대 (상승여력 존재)</div>
-    </div>
+  <h2>선정 사유</h2>
+  <ul>
+    <li>2026년 6월 29일 코스닥 기술특례 신규상장 후 첫 거래주간 +26.32%(공모가 12,500원→15,790원)를 기록하며 강한 수급 쏠림을 보였다.</li>
+    <li>HBM·첨단 패키징 공정용(레이저 커팅·어닐링·다이본딩) 모션 스테이지를 국내 장비업체에 공급하며, 최종 고객사로 삼성전자·SK하이닉스·마이크론을 확보하고 있어 AI반도체 밸류체인 내 실수요 기반이 확인된다.</li>
+    <li>신규상장 프리미엄과 반도체 소부장 테마가 결합해 다음 주에도 수급 모멘텀이 이어질 가능성이 있다.</li>
+  </ul>
+
+  <h2>핵심 리스크</h2>
+  <div class="risk">
+    2025년 연결 매출 221.6억원에 영업손실 약 8.4억원, 순손실 약 15.2억원으로 적자전환 상태라 아직 이익 체력이 검증되지 않았다. 신규상장 종목 특성상 유통물량·오버행 이슈 및 변동성이 매우 크고, 애널리스트 커버리지·목표주가가 부재해 밸류에이션 근거가 약하다. 상장 첫 주 급등에 따른 단기 과열 및 차익실현 리스크도 있다.
   </div>
 
-  <div class="score-row">
-    <div class="score-chip"><span class="score-label">모멘텀</span><span class="score-val score-3">★★★☆☆</span></div>
-    <div class="score-chip"><span class="score-label">수급</span><span class="score-val score-3">★★★☆☆</span></div>
-    <div class="score-chip"><span class="score-label">기술적위치</span><span class="score-val score-4">★★★★☆</span></div>
-    <div class="score-chip"><span class="score-label">리스크</span><span class="score-val" style="color:#d4a13d">중간</span></div>
+  <div class="footer">
+    종목명을 클릭하면 네이버 금융 차트 페이지로 이동합니다. 본 내용은 투자자문이 아닌 정보 제공 목적이며, 투자 판단과 책임은 본인에게 있습니다.
   </div>
-
-  <section>
-    <div class="sec-title">1. 단기 모멘텀 및 이벤트</div>
-    <div class="sec-body">
-      美-이란 종전 합의 이후에도 K-방산에 대한 중동 수출 재개 기대감이 이어지고 있다. UAE가 천궁-Ⅱ·L-SAM 도입을 추진 중이라는 보도가 나왔고, 한화는 스위스 방공시스템 수주 시 일부 현지 생산이라는 협상 카드까지 제시했다. 美 국방물자생산법(DPA) 발동의 나비효과로 K-방산이 '대체 공급자'로서 독점적 지위를 굳힐 수 있다는 분석도 있다. 미래에셋증권은 2026년 영업이익을 4.5조원(+47.9% YoY)으로 전망하며 목표가를 165만원으로 상향했다(컨센서스 평균 150만원).
-      <ul class="tight">
-        <li><strong>폴란드 K9/천무:</strong> EC1 종료 후 EC2 전환, 호주·이집트 신규 납품 본격화 예정</li>
-        <li><strong>중동 신규 수주:</strong> UAE·스위스 협상 진행 중 — 성사 시 추가 리레이팅 트리거</li>
-        <li><strong>안전 이슈:</strong> 노조가 사고 공정 환기설비 문제를 9개월째 제기 중 — 평판·생산 차질 리스크로 모니터링 필요</li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="two-col">
-    <section>
-      <div class="sec-title">2. 주도 테마 및 수급</div>
-      <div class="sec-body">
-        종전 합의 직후(6/18~19) 시장은 방산 모멘텀이 소멸했다고 판단해 4거래일 연속 약세(-2.86%→-5.63% 등)를 보였으나, 이후 "종전 이후에도 중동 재건·신규 군비 수요는 지속된다"는 역발상 분석이 나오며 테마가 재부각되는 국면. 다만 6/25 시장 전체 반등장에서도 -2.29%로 여전히 소외된 모습이라, 수급이 완전히 돌아오지는 않은 상태.
-      </div>
-    </section>
-    <section>
-      <div class="sec-title">3. 기술적 분석</div>
-      <div class="sec-body">
-        52주 범위 636,000~1,655,000원의 넓은 밴드 중 현재가는 중상단권. 6/18 고점 이후 지속적으로 밀리는 하락 추세선 상에 위치해 있어, 추세 전환 확인이 필요한 구간. 최근 6개월 컨센서스 목표가가 106만원 → 150만원으로 41.6% 급상승한 점은 펀더멘털 기대가 가격보다 먼저 변했음을 시사 — 갭이 메워지는 시점이 관전 포인트.
-      </div>
-    </section>
-  </div>
-
-  <div class="verdict-box">
-    <div class="verdict-title">📌 종합 코멘트</div>
-    <div class="verdict-body">
-      "모멘텀이 일시 꺾였지만 펀더멘털 스토리(중동 신규 수주, DPA 수혜)는 오히려 강화되는 중"인 종목. 4거래일 연속 하락이 과매도 구간 진입으로 볼 여지가 있으나, 노조 안전 이슈 등 비재무 리스크도 함께 안고 있어 "쌀 때 사는 종목"과 "아직 손이 안 가는 종목" 사이의 판단이 갈리는 케이스.
-    </div>
-  </div>
-
-  <div class="risk-box">
-    <div class="risk-title">⚠️ 핵심 리스크</div>
-    <div class="risk-body">① 종전 지속 시 방산 수요 모멘텀 추가 약화 가능성 ② 노조가 제기한 안전 이슈가 실제 사고·생산 차질로 번질 가능성 ③ 4Q25 실적이 컨센서스를 36% 하회한 전례 — 분기 실적 변동성 ④ 한화오션·한화시스템 등 연결 자회사 실적 부진 가능성</div>
-  </div>
-
-  <div class="footer-note">
-    본 자료는 정보 제공 목적이며 투자 권유가 아닙니다. 작성자는 투자자문업 등록 기관이 아니며 특정 종목의 매수·매도를 추천하지 않습니다. 모든 수치는 공개된 뉴스·증권사 리포트 기준이며, 투자 결정은 본인의 판단과 책임 하에 이루어져야 합니다. · 한상훈_AI_투자브리핑
-  </div>
-
 </div>
 </body>
 </html>

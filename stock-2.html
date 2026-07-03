@@ -2,111 +2,93 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KT | 다음주 매수 후보 분석</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<title>대원전선 (006340) - 주간 Top-5</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f5f0;--surface:#ffffff;--surface2:#f0efe8;--border:#d8d8d0;--accent:#c8a96e;--up:#e05c5c;--down:#4caf82;--text:#1a1a1a;--muted:#6b7280;--dim:#9ca3af;--radius:10px}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;line-height:1.55}
-.page{max-width:780px;margin:0 auto;padding:28px 32px;background:var(--surface)}
-.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
-.ticker-badge{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);background:var(--surface2);padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:6px}
-.name{font-family:'DM Serif Display',serif;font-size:28px}
-.subtitle{font-size:12px;color:var(--muted);margin-top:2px}
-.price-box{text-align:right}
-.price{font-family:'DM Serif Display',serif;font-size:26px}
-.chg{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600}
-.up{color:var(--up)}
-.down{color:var(--down)}
-.score-row{display:flex;gap:10px;margin-bottom:18px}
-.score-chip{flex:1;background:var(--surface2);border-radius:var(--radius);padding:10px 12px;text-align:center}
-.score-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);display:block;margin-bottom:4px;letter-spacing:.04em}
-.score-val{font-size:18px;font-weight:700}
-.score-3{color:var(--muted)}
-.score-2{color:var(--down)}
-section{margin-bottom:14px}
-.sec-title{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.05em;margin-bottom:6px;padding-bottom:3px;border-bottom:1px solid var(--border)}
-.sec-body{font-size:12.5px;color:var(--text);line-height:1.6}
-.sec-body strong{color:var(--text)}
-ul.tight{padding-left:16px;margin-top:4px}
-ul.tight li{font-size:12px;margin-bottom:3px;color:var(--text)}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.verdict-box{background:linear-gradient(135deg,#fff8e1,#fffde7);border:1.5px solid #e8c468;border-radius:var(--radius);padding:14px 16px;margin-top:10px}
-.verdict-title{font-size:13px;font-weight:700;color:#7a5c00;margin-bottom:4px}
-.verdict-body{font-size:12px;color:#5d4a1f;line-height:1.6}
-.risk-box{background:#fff5f5;border:1px solid #fca5a5;border-radius:var(--radius);padding:10px 14px;margin-top:8px}
-.risk-title{font-size:11px;font-weight:700;color:#b91c1c;margin-bottom:4px}
-.risk-body{font-size:11.5px;color:#7a2020;line-height:1.55}
-.footer-note{margin-top:16px;padding-top:10px;border-top:1px solid var(--border);font-size:9.5px;color:var(--dim);line-height:1.5}
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #f4f2f0;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 30px 22px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  }
+  .ticker {
+    display: inline-block;
+    background: #fdeceb;
+    color: #d0392b;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  h1 { margin: 4px 0 6px; font-size: 26px; }
+  h1 a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 2px solid #d0392b;
+  }
+  h1 a:hover { color: #d0392b; }
+  .market { color: #666; font-size: 14px; margin-bottom: 4px; }
+  .change { color: #333; font-size: 14px; margin-bottom: 18px; font-weight: 500; }
+  h2 {
+    font-size: 15px;
+    color: #d0392b;
+    border-left: 4px solid #d0392b;
+    padding-left: 8px;
+    margin: 18px 0 8px;
+  }
+  ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: #222; }
+  .risk {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.5;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+  }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="card">
+  <span class="ticker">티커 006340</span>
+  <h1><a href="https://finance.naver.com/item/fchart.naver?code=006340" target="_blank" rel="noopener">대원전선</a></h1>
+  <div class="market">KOSPI · 전력케이블(AI 데이터센터 전력 인프라)</div>
+  <div class="change">지난주(2026-06-26 → 2026-07-03) +44.36% · 9,040원 → 13,050원</div>
 
-  <div class="top">
-    <div>
-      <span class="ticker-badge">030200 · KOSPI</span>
-      <div class="name">KT</div>
-      <div class="subtitle">통신 · 배당주 · AI/로봇 B2B 전환 스토리</div>
-    </div>
-    <div class="price-box">
-      <div class="price">배당주 구간</div>
-      <div class="chg" style="color:var(--muted)">5년 배당성장률 +12.2%</div>
-      <div style="font-size:10px;color:var(--muted);margin-top:3px">최근 배당락일 5/26</div>
-    </div>
+  <h2>선정 사유</h2>
+  <ul>
+    <li>지난주 +44.36%(9,040원→13,050원)로 스크리닝 대상 중 최고 상승률을 기록했으며, 52주 최고가 20,300원 대비 여전히 약 -35% 낮은 수준이라 추가 상승 여력이 남아있다.</li>
+    <li>2026년 1분기 연결 매출 +25.1%, 영업이익 +76.2%, 순이익 +76.1%로 실적 개선이 실제 수치로 확인됐다(LME 동가격 상승 및 전력선·절연전선 수요 증가 반영).</li>
+    <li>AI 데이터센터發 전력 인프라 투자 확대 기대감과, 정부의 호남권 반도체 클러스터 조성 기대감에 따른 전력·케이블주 동반 강세 수급이 겹쳐 있다.</li>
+  </ul>
+
+  <h2>핵심 리스크</h2>
+  <div class="risk">
+    공식 증권사 목표주가 리포트가 부재해 목표주가는 "확인불가"이며(커뮤니티 추정치만 존재, 신뢰도 낮음), 최근 상승분 상당수가 호남 클러스터 기대감 등 테마성 수급에 기인해 정책 확정이 지연될 경우 되돌림 가능성이 있다. 원자재(LME 동) 가격 변동에 실적이 연동되는 구조적 리스크도 있다.
   </div>
 
-  <div class="score-row">
-    <div class="score-chip"><span class="score-label">모멘텀</span><span class="score-val score-2">★★☆☆☆</span></div>
-    <div class="score-chip"><span class="score-label">수급</span><span class="score-val score-2">★★☆☆☆</span></div>
-    <div class="score-chip"><span class="score-label">기술적위치</span><span class="score-val score-3">★★★☆☆</span></div>
-    <div class="score-chip"><span class="score-label">리스크</span><span class="score-val" style="color:#2e7d32">낮음</span></div>
+  <div class="footer">
+    종목명을 클릭하면 네이버 금융 차트 페이지로 이동합니다. 본 내용은 투자자문이 아닌 정보 제공 목적이며, 투자 판단과 책임은 본인에게 있습니다.
   </div>
-
-  <section>
-    <div class="sec-title">1. 단기 모멘텀 및 이벤트</div>
-    <div class="sec-body">
-      하나증권은 2026년 6월 통신서비스 업종 투자 매력도를 '높음'으로 유지하면서도, 종목별 투자 매력도는 <strong>SK텔레콤 > LG유플러스 > KT 순</strong>으로 제시했다 — 통신 3사 중 KT가 가장 후순위로 평가된 점이 핵심 포인트다. 이유는 마케팅 경쟁 강도 측면에서 SK텔레콤·LG유플러스의 2분기 실적 기저효과가 더 크고, KT는 AI 이슈 재료가 상대적으로 덜 살아있다는 평가다. 다만 KT 자체적으로는 MWC 2026에서 피지컬 AI 로봇 플랫폼 'K RaaS'를 공개하며 B2B AI 구독경제로의 사업 축 전환을 시도 중이다.
-      <ul class="tight">
-        <li><strong>국책 AI 사업자 선정:</strong> 통신 3사 공통 이슈로, 선정 가능성이 단기 주가 상승 기대 요인 거론</li>
-        <li><strong>AI RAN 도입:</strong> 국내 피지컬 AI 활성화를 위한 5G SA 확산 — 다만 SK텔레콤이 이 분야에서 더 밀접한 연관성을 보인다는 평가</li>
-        <li><strong>배당 매력:</strong> 단기 정책 노이즈로 주가가 하락할 때마다 고배당 수익률(6~7%대) 구간에서 배당 투자 수요가 유입되는 패턴</li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="two-col">
-    <section>
-      <div class="sec-title">2. 주도 테마 및 수급</div>
-      <div class="sec-body">
-        통신주는 반도체 쏠림 장세와 무관하게 움직이는 저베타 업종으로, 최근 시장의 극단적 변동성과 상관관계가 낮다. 다만 6월 한 달간 통신 3사 내에서의 상대적 매력도 비교에서 KT가 가장 낮게 평가됐다는 점은 "통신주를 보유하고 싶다면 KT보다 다른 대안이 있다"는 의견이 시장에 존재함을 시사한다. 통신서비스주로의 매수세 확산은 美·국내 통신장비주 급등에 후행할 가능성이 거론된다.
-      </div>
-    </section>
-    <section>
-      <div class="sec-title">3. 기술적 분석</div>
-      <div class="sec-body">
-        통신주 특성상 차트 변동성이 작고 배당수익률과 주가가 역의 관계(주가 하락 시 배당 매력 증가)를 보이는 경향이 있다. 정부 규제 산업이라는 한계와 CEO 리스크가 통신망 장애·요금제 개편 등 정치적 이벤트 발생 시 주가에 일시적 영향을 줄 수 있는 구조. 거래량은 반도체 종목 대비 현저히 낮은 수준에서 안정적으로 유지.
-      </div>
-    </section>
-  </div>
-
-  <div class="verdict-box">
-    <div class="verdict-title">📌 종합 코멘트</div>
-    <div class="verdict-body">
-      "안정적이지만 다음 주에 KT를 사야 할 특별한 이유는 약하다"가 핵심 요약. 같은 통신업종 내에서도 6월 증권가 평가는 KT를 3사 중 가장 후순위에 두고 있어, 굳이 통신주를 담고 싶다면 SK텔레콤·LG유플러스가 먼저 거론되는 상황. 배당·안정성 관점의 장기 보유에는 부합할 수 있으나, "다음 주 단기 모멘텀 Pick" 관점에서는 4종목 중 상대적으로 가장 약한 후보로 평가된다.
-    </div>
-  </div>
-
-  <div class="risk-box">
-    <div class="risk-title">⚠️ 핵심 리스크</div>
-    <div class="risk-body">① 통신 3사 내 상대적 매력도 최하위 평가(6월 기준) ② 정부 규제·CEO 리스크라는 통신업 특유의 정치적 외풍 ③ AI 모멘텀에서도 SK텔레콤 대비 연관성이 낮다는 평가가 존재</div>
-  </div>
-
-  <div class="footer-note">
-    본 자료는 정보 제공 목적이며 투자 권유가 아닙니다. 작성자는 투자자문업 등록 기관이 아니며 특정 종목의 매수·매도를 추천하지 않습니다. 모든 수치는 공개된 뉴스·증권사 리포트 기준이며, 투자 결정은 본인의 판단과 책임 하에 이루어져야 합니다. · 한상훈_AI_투자브리핑
-  </div>
-
 </div>
 </body>
 </html>
