@@ -2,15 +2,16 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>신한지주 (055550) - 주간 Top-5</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>피에스케이 (319660) - 주간 Top-5</title>
 <style>
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    padding: 40px 20px;
+    padding: 24px 16px;
     background: #f4f2f0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, sans-serif;
     display: flex;
     justify-content: center;
   }
@@ -19,72 +20,73 @@
     max-width: 480px;
     background: #ffffff;
     border-radius: 20px;
-    padding: 28px 30px 22px;
+    padding: 24px 20px 18px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    overflow-wrap: break-word;
   }
   .ticker {
     display: inline-block;
     background: #fdeceb;
     color: #d0392b;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
     padding: 4px 10px;
     border-radius: 999px;
     margin-bottom: 10px;
   }
-  h1 { margin: 4px 0 6px; font-size: 26px; }
-  h1 a {
-    color: #1a1a1a;
-    text-decoration: none;
-    border-bottom: 2px solid #d0392b;
-  }
-  h1 a:hover { color: #d0392b; }
-  .market { color: #666; font-size: 14px; margin-bottom: 4px; }
-  .change { color: #333; font-size: 14px; margin-bottom: 18px; font-weight: 500; }
+  h1 { margin: 4px 0 6px; font-size: clamp(20px, 6vw, 26px); word-break: keep-all; }
+  h1 a { color: #1a1a1a; text-decoration: none; border-bottom: 2px solid #d0392b; }
+  .market { color: #666; font-size: 13px; margin-bottom: 4px; word-break: keep-all; }
+  .change { color: #333; font-size: 13px; margin-bottom: 16px; font-weight: 500; word-break: keep-all; }
   h2 {
-    font-size: 15px;
+    font-size: 14px;
     color: #d0392b;
     border-left: 4px solid #d0392b;
     padding-left: 8px;
-    margin: 18px 0 8px;
+    margin: 16px 0 8px;
   }
-  ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: #222; }
+  ul { margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; color: #222; word-break: keep-all; }
   .risk {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
     color: #222;
     background: #fafafa;
     border-radius: 10px;
     padding: 12px 14px;
+    word-break: keep-all;
   }
   .footer {
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 11px;
     color: #999;
     line-height: 1.5;
     border-top: 1px solid #eee;
     padding-top: 12px;
+    word-break: keep-all;
+  }
+  @media (max-width: 380px) {
+    body { padding: 16px 10px; }
+    .card { padding: 18px 14px 14px; }
   }
 </style>
 </head>
 <body>
 <div class="card">
-  <span class="ticker">티커 055550</span>
-  <h1><a href="https://finance.naver.com/item/fchart.naver?code=055550" target="_blank" rel="noopener">신한지주</a></h1>
-  <div class="market">KOSPI · 금융지주(은행·밸류업)</div>
-  <div class="change">지난주(2026-06-26 → 2026-07-03) +17.14% · 91,600원 → 107,300원</div>
+  <span class="ticker">티커 319660</span>
+  <h1><a href="https://finance.naver.com/item/fchart.naver?code=319660" target="_blank" rel="noopener">피에스케이</a></h1>
+  <div class="market">KOSDAQ · 반도체 전공정 소부장(PR Strip·Dry Cleaning 장비)</div>
+  <div class="change">지난주(07/03→07/10) +3.89% · 182,300원 → 189,400원</div>
 
   <h2>선정 사유</h2>
   <ul>
-    <li>지난주 +17.14%(91,600원→107,300원)로 강한 상대강도를 보였다.</li>
-    <li>애널리스트 23명 컨센서스 투자의견 "강력매수"(매수 22, 보유 1, 매도 0), 평균 12개월 목표주가 약 10.2만~12만원대로 현재가 대비 추가 상승 여력이 있다.</li>
-    <li>2026년 연결 순이익 약 5.65조원 전망 등 이익 개선 기대가 유지되는 가운데, 2분기 실적은 통상 7월 말~8월 초 발표될 예정으로 다음 주는 실적 프리뷰 기대감이 반영되는 구간이다.</li>
+    <li>코스피 반도체 대형주가 −8~10% 급락한 약세장에서 +3.89% 상승 — 거래대금 Top-50(43위) 내 뚜렷한 상대강도.</li>
+    <li>HBM·차세대 메모리와 파운드리 미세공정 확대에 따른 전공정 장비 수요로, 증권가는 2026년 '창사 최대 실적'을 전망.</li>
+    <li>애널리스트 컨센서스 '강력 매수(Strong Buy)', 12개월 목표주가 약 86,667원(투자정보 사이트 집계 기준)으로 상승여력 제시.</li>
+    <li>급등주 대비 과열도가 낮아(주간 +3.89%) 다음 주 지속성·눌림목 대응 여지가 상대적으로 양호.</li>
   </ul>
 
   <h2>핵심 리스크</h2>
-  <div class="risk">
-    국내 기준금리 인하 사이클이 본격화될 경우 순이자마진(NIM) 축소 우려가 있다. 금융권 전반에 해외 부동산 대체투자 관련 부실 우려가 제기되고 있어 잠재 익스포저 점검이 필요하다. 단기 급등에 따른 차익실현 매물 출회 가능성도 존재한다.
-  </div>
+  <div class="risk">3분기 개별 분기 매출·영업이익은 전년 동기 대비 각각 약 −11.75%·−19.66%로 분기 실적 모멘텀은 둔화 구간(누적 기준은 증가). 메모리 업황과 전방 설비투자(capex) 사이클에 따라 밸류에이션 변동성이 큼. 목표주가·투자의견은 증권사 추정치로 실제와 다를 수 있음.</div>
 
   <div class="footer">
     종목명을 클릭하면 네이버 금융 차트 페이지로 이동합니다. 본 내용은 투자자문이 아닌 정보 제공 목적이며, 투자 판단과 책임은 본인에게 있습니다.

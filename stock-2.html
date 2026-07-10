@@ -2,15 +2,16 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>대원전선 (006340) - 주간 Top-5</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>마키나락스 (477850) - 주간 Top-5</title>
 <style>
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    padding: 40px 20px;
+    padding: 24px 16px;
     background: #f4f2f0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, sans-serif;
     display: flex;
     justify-content: center;
   }
@@ -19,72 +20,73 @@
     max-width: 480px;
     background: #ffffff;
     border-radius: 20px;
-    padding: 28px 30px 22px;
+    padding: 24px 20px 18px;
     box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    overflow-wrap: break-word;
   }
   .ticker {
     display: inline-block;
     background: #fdeceb;
     color: #d0392b;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
     padding: 4px 10px;
     border-radius: 999px;
     margin-bottom: 10px;
   }
-  h1 { margin: 4px 0 6px; font-size: 26px; }
-  h1 a {
-    color: #1a1a1a;
-    text-decoration: none;
-    border-bottom: 2px solid #d0392b;
-  }
-  h1 a:hover { color: #d0392b; }
-  .market { color: #666; font-size: 14px; margin-bottom: 4px; }
-  .change { color: #333; font-size: 14px; margin-bottom: 18px; font-weight: 500; }
+  h1 { margin: 4px 0 6px; font-size: clamp(20px, 6vw, 26px); word-break: keep-all; }
+  h1 a { color: #1a1a1a; text-decoration: none; border-bottom: 2px solid #d0392b; }
+  .market { color: #666; font-size: 13px; margin-bottom: 4px; word-break: keep-all; }
+  .change { color: #333; font-size: 13px; margin-bottom: 16px; font-weight: 500; word-break: keep-all; }
   h2 {
-    font-size: 15px;
+    font-size: 14px;
     color: #d0392b;
     border-left: 4px solid #d0392b;
     padding-left: 8px;
-    margin: 18px 0 8px;
+    margin: 16px 0 8px;
   }
-  ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: #222; }
+  ul { margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; color: #222; word-break: keep-all; }
   .risk {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
     color: #222;
     background: #fafafa;
     border-radius: 10px;
     padding: 12px 14px;
+    word-break: keep-all;
   }
   .footer {
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 11px;
     color: #999;
     line-height: 1.5;
     border-top: 1px solid #eee;
     padding-top: 12px;
+    word-break: keep-all;
+  }
+  @media (max-width: 380px) {
+    body { padding: 16px 10px; }
+    .card { padding: 18px 14px 14px; }
   }
 </style>
 </head>
 <body>
 <div class="card">
-  <span class="ticker">티커 006340</span>
-  <h1><a href="https://finance.naver.com/item/fchart.naver?code=006340" target="_blank" rel="noopener">대원전선</a></h1>
-  <div class="market">KOSPI · 전력케이블(AI 데이터센터 전력 인프라)</div>
-  <div class="change">지난주(2026-06-26 → 2026-07-03) +44.36% · 9,040원 → 13,050원</div>
+  <span class="ticker">티커 477850</span>
+  <h1><a href="https://finance.naver.com/item/fchart.naver?code=477850" target="_blank" rel="noopener">마키나락스</a></h1>
+  <div class="market">KOSDAQ · 산업 특화 AI 솔루션('한국의 팔란티어' 테마)</div>
+  <div class="change">지난주(07/03→07/10) +26.50% · 23,400원 → 29,600원</div>
 
   <h2>선정 사유</h2>
   <ul>
-    <li>지난주 +44.36%(9,040원→13,050원)로 스크리닝 대상 중 최고 상승률을 기록했으며, 52주 최고가 20,300원 대비 여전히 약 -35% 낮은 수준이라 추가 상승 여력이 남아있다.</li>
-    <li>2026년 1분기 연결 매출 +25.1%, 영업이익 +76.2%, 순이익 +76.1%로 실적 개선이 실제 수치로 확인됐다(LME 동가격 상승 및 전력선·절연전선 수요 증가 반영).</li>
-    <li>AI 데이터센터發 전력 인프라 투자 확대 기대감과, 정부의 호남권 반도체 클러스터 조성 기대감에 따른 전력·케이블주 동반 강세 수급이 겹쳐 있다.</li>
+    <li>지난주 급락장에서 +26.50% 급등하며 거래대금 Top-50(30위)에 진입 — 매수세가 집중된 강한 모멘텀.</li>
+    <li>폐쇄망 등 특수환경용 산업 AI(자체 AI 운영체계 '런웨이')를 제조·에너지·반도체·자동차·국방에 공급하는 AI 소프트웨어 성장 테마.</li>
+    <li>한국수자원공사 '생성형 AI 스마트정수장' 시범 구축 사업 수주 등 공공 레퍼런스 확대, 최근 5일 뉴스 긍정 비중 상승(약 72%).</li>
+    <li>지난달 코스닥 신규 상장주로 시장 관심·수급이 집중되는 국면.</li>
   </ul>
 
   <h2>핵심 리스크</h2>
-  <div class="risk">
-    공식 증권사 목표주가 리포트가 부재해 목표주가는 "확인불가"이며(커뮤니티 추정치만 존재, 신뢰도 낮음), 최근 상승분 상당수가 호남 클러스터 기대감 등 테마성 수급에 기인해 정책 확정이 지연될 경우 되돌림 가능성이 있다. 원자재(LME 동) 가격 변동에 실적이 연동되는 구조적 리스크도 있다.
-  </div>
+  <div class="risk">신규 상장 초기 종목으로 유통물량·보호예수 해제 및 급등 후 차익실현에 따른 변동성이 극심함(장중 VI 반복 발동 이력). 실적 대비 기대가 선반영된 고밸류에이션 우려가 있으며, 테마성 수급이 이탈하면 낙폭이 클 수 있음.</div>
 
   <div class="footer">
     종목명을 클릭하면 네이버 금융 차트 페이지로 이동합니다. 본 내용은 투자자문이 아닌 정보 제공 목적이며, 투자 판단과 책임은 본인에게 있습니다.
